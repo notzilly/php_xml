@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT filmes (filme)*>
+<!ELEMENT filme (tituloEN, tituloBR, genero, duracao, ano, site, distribuicao, direcao, (elenco|elencoApoio)*, sinopse)>
+<!ATTLIST filme
+    id ID #REQUIRED
+>
+<!ELEMENT tituloEN (#PCDATA)>
+<!ELEMENT tituloBR (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT duracao (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT site (#PCDATA)>
+<!ELEMENT distribuicao (#PCDATA)>
+<!ELEMENT direcao (#PCDATA)>
+<!ELEMENT elenco (#PCDATA)>
+<!ELEMENT elencoApoio (#PCDATA)>
+<!ELEMENT sinopse (#PCDATA)>
