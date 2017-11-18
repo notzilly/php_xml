@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE filmes SYSTEM "GioMovies.dtd">
+<!DOCTYPE filmes SYSTEM "input_GioMovies.dtd">
 <filmes>
     <filme id="starwarsIV">
         <tituloEN>Star Wars</tituloEN>

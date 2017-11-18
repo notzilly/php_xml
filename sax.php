@@ -5,7 +5,7 @@
 echo '<meta charset="ISO-8859-1"/>';
 
 // CSS
-echo '<link rel="stylesheet" href="sax.css">';
+echo '<link rel="stylesheet" href="input_sax_styles.css">';
 
 // Array global para o filme
 $filme = [];
@@ -118,7 +118,7 @@ xml_set_element_handler($parser, "abreTag", "fechaTag");
 xml_set_character_data_handler($parser, "dataHandler");
 
 // Abre o arquivo XML
-if (!($handle = fopen('GioMoviesEncodingISO88591.xml', "r"))) {
+if (!($handle = fopen('input_GioMovies_EncodingISO88591.xml', "r"))) {
     die("could not open XML input");
 }
 // Lê o arquivo e manda a string lida para o parser

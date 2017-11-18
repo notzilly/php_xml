@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>DOMDocument</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="input_table_styles.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 $doc = new DOMDocument();
 
 // Loading and parsing specified file; building the DOM tree structure on memory
-$doc->load( 'GioMovies.xml' );
+$doc->load( 'input_GioMovies.xml' );
 
 $xpath = new DOMXpath($doc);
 $elements = $xpath->query("//*[@id]");

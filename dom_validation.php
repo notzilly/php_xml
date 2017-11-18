@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>DOMDocument</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="input_table_styles.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 $doc = new DOMDocument();
 
 // Loading and parsing specified file; building the DOM tree structure on memory
-$doc->load( 'GioMovies.xml' );
+$doc->load( 'input_GioMovies.xml' );
 
 // Selecting every 'filme' element from the DOM tree
 $filmes = $doc->getElementsByTagName( "filme" );
@@ -49,7 +49,7 @@ if ($doc->validate()) {
 }
 
 // Validating xml against Schema
-if ($doc->schemaValidate("GioMovies.xsd")) {
+if ($doc->schemaValidate("input_GioMovies.xsd")) {
     echo "<h3>O documento 'GioMovies.xml' foi validado em relação ao Schema 'GioMovies.xsd'</h3>";
 } else {
     echo "<br/><br/>";

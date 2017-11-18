@@ -11,7 +11,7 @@
 $doc = new DOMDocument();
 
 // Loading and parsing specified file; building the DOM tree structure on memory
-$doc->load( 'GioMovies.xml' );
+$doc->load( 'input_GioMovies.xml' );
 
 // Instantiating DOMXpath Object
 $xpath = new DOMXpath($doc);
