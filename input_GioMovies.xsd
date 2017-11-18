@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="filmes">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="filme"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="filme">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tituloEN"/>
+				<xs:element ref="tituloBR"/>
+				<xs:element ref="genero"/>
+				<xs:element ref="duracao"/>
+				<xs:element ref="ano"/>
+				<xs:element ref="site"/>
+				<xs:element ref="distribuicao"/>
+				<xs:element ref="direcao"/>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="elenco"/>
+					<xs:element ref="elencoApoio"/>
+				</xs:choice>
+				<xs:element ref="sinopse"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tituloEN">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="tituloBR">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="genero">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="duracao">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="ano">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="site">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="distribuicao">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="direcao">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="elenco">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="elencoApoio">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+	<xs:element name="sinopse">
+		<xs:complexType mixed="true"/>
+	</xs:element>
+</xs:schema>
